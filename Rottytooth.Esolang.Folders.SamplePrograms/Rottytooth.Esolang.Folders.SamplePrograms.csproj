@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rottytooth.Esolang.Folders.SamplePrograms</RootNamespace>
+    <AssemblyName>Rottytooth.Esolang.Folders.SamplePrograms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Programs\99 Bottles\10 declare\bottles\" />
+    <Folder Include="Programs\99 Bottles\10 declare\int\" />
+    <Folder Include="Programs\99 Bottles\10 declare\Local\bottles\" />
+    <Folder Include="Programs\99 Bottles\10 let\1 bottles\" />
+    <Folder Include="Programs\99 Bottles\10 let\99\" />
+    <Folder Include="Programs\99 Bottles\10 print\1 string\99 bottles of beer on the wall, 99 bottles of beer.&amp;lf%3b\" />
+    <Folder Include="Programs\99 Bottles\10 print\2 string\Take one down, pass it around,%2520%3b\" />
+    <Folder Include="Programs\99 Bottles\10 while\10 bottles &amp;gt%3b 1\" />
+    <Folder Include="Programs\99 Bottles\10 while\100 let\1 bottles\" />
+    <Folder Include="Programs\99 Bottles\10 while\100 let\2 bottles - 1\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\10 bottles\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\20 string\%2520%3bbottles of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\30 bottles\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\40 string\%2520%3bbottles of beer on the wall,%2520%3b\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\50 bottles\" />
+    <Folder Include="Programs\99 Bottles\10 while\20 print\60 string\%2520%3bbottles of beer.%255C%3bnTake one down, pass it around,%2520%3b\" />
+    <Folder Include="Programs\99 Bottles\50 print\10 string\1 bottle of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
+    <Folder Include="Programs\99 Bottles\50 print\20 string\1 bottle of beer on the wall, 1 bottle of beer.&amp;lf%3b\" />
+    <Folder Include="Programs\99 Bottles\50 print\30 string\Take one down, pass it around, no more bottles of beer on the wall%252E%3b\" />
+    <Folder Include="Programs\Hello World\Setup\Img %282%29\,%2520%3b\" />
+    <Folder Include="Programs\Hello World\Setup\Img %283%29\World\" />
+    <Folder Include="Programs\Hello World\Setup\Img %284%29\!\" />
+    <Folder Include="Programs\Hello World\Setup\Img\Hello\" />
+    <Folder Include="Programs\Long String\1 Images\bigguy\" />
+    <Folder Include="Programs\Long String\1 Images\Img\" />
+    <Folder Include="Programs\Long String\2 Downloads\bigguy\" />
+    <Folder Include="Programs\Long String\2 Downloads\Img\Call me Ishmael. Some years ago - never mind how long precisely - having little or no mon\" />
+    <Folder Include="Programs\Long String\3 Downloads\1 bigguy\" />
+    <Folder Include="Programs\Long String\3 Downloads\2 bigguy +\" />
+    <Folder Include="Programs\Long String\3 Downloads\3 Img\ey in my purse, and nothing particular to interest me on shor\" />
+    <Folder Include="Programs\Long String\4 Downloads\1 bigguy\" />
+    <Folder Include="Programs\Long String\4 Downloads\2 bigguy +\" />
+    <Folder Include="Programs\Long String\4 Downloads\Img\e, I thought I would sail about a little and see the watery part of the world\" />
+    <Folder Include="Programs\Long String\5 Setup\bigguy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rottytooth.Esolang.Folders\Rottytooth.Esolang.Folders.csproj">
+      <Project>{93df756d-62ef-4b83-bd35-b281f3cf701e}</Project>
+      <Name>Rottytooth.Esolang.Folders</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /T /E /I "$(ProjectDir)\Programs" "$(TargetDir)\Programs"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
