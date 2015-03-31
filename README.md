@@ -1,5 +1,5 @@
 # Folders
-A language where the code is written with folders. 
+A language where the code is written with folders. Perhaps the most Windows of languages.
 
 Hello, World!
 
