@@ -194,7 +194,7 @@ namespace Rottytooth.Esolang.Folders
             // allow for ordering of folders, multiple folders with same command
             foldername = GetRegex(foldername, @"\d+ (.*)"); // remove leading number
             foldername = GetRegex(foldername, @"(.*) \(\d+\)"); // remove parentheses & number from end
-            foldername = GetRegex(foldername, @"(.*) - Copy"); // remove Copy
+            foldername = GetRegex(foldername, @"(.*?)( - Copy)+"); // remove Copy
 
             foldername = SpecialSymbols.Decode(foldername);
 
