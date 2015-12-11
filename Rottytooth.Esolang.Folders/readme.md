@@ -6,4 +6,4 @@ To compile to exe:
 
 To transpile to C# code:
 
-    Folder [pathToRoot] /s
+    Folders [pathToRoot] /s
