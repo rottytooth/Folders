@@ -15,32 +15,49 @@ namespace Rottytooth.Esolang.Folders.SamplePrograms
         {
             // Run each of the sample programs
 
-            HelloWorld();
+            HelloWorldBasic();
 
-            NinetyNineBottles();
+            Console.WriteLine();
 
-            LongString();
+            NinetyNineBottlesBasic();
+
+            Console.WriteLine();
+
+            LongStringBasic();
+
+            Console.WriteLine();
+
+            HelloWorldPure();
+
+            Console.WriteLine();
         }
 
         [TestMethod]
-        public static void HelloWorld()
+        public static void HelloWorldBasic()
         {
             string errors = "";
-            Assert.IsTrue(Folders.Program.Compile(@"Programs\Hello World", ref errors));
+            Assert.IsTrue(Folders.Program.Compile(@"BasicPrograms\Hello World", ref errors, false, false));
         }
 
         [TestMethod]
-        public static void NinetyNineBottles()
+        public static void NinetyNineBottlesBasic()
         {
             string errors = "";
-            Assert.IsTrue(Folders.Program.Compile(@"Programs\99 Bottles", ref errors));
+            Assert.IsTrue(Folders.Program.Compile(@"BasicPrograms\99 Bottles", ref errors, false, false));
         }
 
         [TestMethod]
-        public static void LongString()
+        public static void LongStringBasic()
         {
             string errors = "";
-            Assert.IsTrue(Folders.Program.Compile(@"Programs\Long String", ref errors));
+            Assert.IsTrue(Folders.Program.Compile(@"BasicPrograms\Long String", ref errors, false, false));
+        }
+
+        [TestMethod]
+        public static void HelloWorldPure()
+        {
+            string errors = "";
+            Assert.IsTrue(Folders.Program.Compile(@"PurePrograms\Hello World", ref errors, false, true));
         }
 
     }

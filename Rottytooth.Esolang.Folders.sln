@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders", "Rottytooth.Esolang.Folders\Rottytooth.Esolang.Folders.csproj", "{93DF756D-62EF-4B83-BD35-B281F3CF701E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders.Runtime", "Rottytooth.Esolang.Folders.Runtime\Rottytooth.Esolang.Folders.Runtime.csproj", "{0462FC51-8839-4907-AE19-DE4B3929AF95}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders.SamplePrograms", "Rottytooth.Esolang.Folders.SamplePrograms\Rottytooth.Esolang.Folders.SamplePrograms.csproj", "{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders.Runtime", "Rottytooth.Esolang.Folders.Runtime\Rottytooth.Esolang.Folders.Runtime.csproj", "{0462FC51-8839-4907-AE19-DE4B3929AF95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +19,14 @@ Global
 		{93DF756D-62EF-4B83-BD35-B281F3CF701E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93DF756D-62EF-4B83-BD35-B281F3CF701E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93DF756D-62EF-4B83-BD35-B281F3CF701E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0462FC51-8839-4907-AE19-DE4B3929AF95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

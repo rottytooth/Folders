@@ -11,6 +11,21 @@
     <AssemblyName>Rottytooth.Esolang.Folders.SamplePrograms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,40 +64,41 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Programs\99 Bottles\10 declare\bottles\" />
-    <Folder Include="Programs\99 Bottles\10 declare\int\" />
-    <Folder Include="Programs\99 Bottles\10 declare\Local\bottles\" />
-    <Folder Include="Programs\99 Bottles\10 let\1 bottles\" />
-    <Folder Include="Programs\99 Bottles\10 let\99\" />
-    <Folder Include="Programs\99 Bottles\10 print\1 string\99 bottles of beer on the wall, 99 bottles of beer.&amp;lf%3b\" />
-    <Folder Include="Programs\99 Bottles\10 print\2 string\Take one down, pass it around,%2520%3b\" />
-    <Folder Include="Programs\99 Bottles\10 while\10 bottles &amp;gt%3b 1\" />
-    <Folder Include="Programs\99 Bottles\10 while\100 let\1 bottles\" />
-    <Folder Include="Programs\99 Bottles\10 while\100 let\2 bottles - 1\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\10 bottles\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\20 string\%2520%3bbottles of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\30 bottles\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\40 string\%2520%3bbottles of beer on the wall,%2520%3b\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\50 bottles\" />
-    <Folder Include="Programs\99 Bottles\10 while\20 print\60 string\%2520%3bbottles of beer.%255C%3bnTake one down, pass it around,%2520%3b\" />
-    <Folder Include="Programs\99 Bottles\50 print\10 string\1 bottle of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
-    <Folder Include="Programs\99 Bottles\50 print\20 string\1 bottle of beer on the wall, 1 bottle of beer.&amp;lf%3b\" />
-    <Folder Include="Programs\99 Bottles\50 print\30 string\Take one down, pass it around, no more bottles of beer on the wall%252E%3b\" />
-    <Folder Include="Programs\Hello World\Setup\Img %282%29\,%2520%3b\" />
-    <Folder Include="Programs\Hello World\Setup\Img %283%29\World\" />
-    <Folder Include="Programs\Hello World\Setup\Img %284%29\!\" />
-    <Folder Include="Programs\Hello World\Setup\Img\Hello\" />
-    <Folder Include="Programs\Long String\1 Images\bigguy\" />
-    <Folder Include="Programs\Long String\1 Images\Img\" />
-    <Folder Include="Programs\Long String\2 Downloads\bigguy\" />
-    <Folder Include="Programs\Long String\2 Downloads\Img\Call me Ishmael. Some years ago - never mind how long precisely - having little or no mon\" />
-    <Folder Include="Programs\Long String\3 Downloads\1 bigguy\" />
-    <Folder Include="Programs\Long String\3 Downloads\2 bigguy +\" />
-    <Folder Include="Programs\Long String\3 Downloads\3 Img\ey in my purse, and nothing particular to interest me on shor\" />
-    <Folder Include="Programs\Long String\4 Downloads\1 bigguy\" />
-    <Folder Include="Programs\Long String\4 Downloads\2 bigguy +\" />
-    <Folder Include="Programs\Long String\4 Downloads\Img\e, I thought I would sail about a little and see the watery part of the world\" />
-    <Folder Include="Programs\Long String\5 Setup\bigguy\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 declare\bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 declare\int\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 declare\Local\bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 let\1 bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 let\99\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 print\1 string\99 bottles of beer on the wall, 99 bottles of beer.&amp;lf%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 print\2 string\Take one down, pass it around,%2520%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\10 bottles &amp;gt%3b 1\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\100 let\1 bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\100 let\2 bottles - 1\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\10 bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\20 string\%2520%3bbottles of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\30 bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\40 string\%2520%3bbottles of beer on the wall,%2520%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\50 bottles\" />
+    <Folder Include="BasicPrograms\99 Bottles\10 while\20 print\60 string\%2520%3bbottles of beer.%255C%3bnTake one down, pass it around,%2520%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\50 print\10 string\1 bottle of beer on the wall.&amp;lf%3b&amp;lf%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\50 print\20 string\1 bottle of beer on the wall, 1 bottle of beer.&amp;lf%3b\" />
+    <Folder Include="BasicPrograms\99 Bottles\50 print\30 string\Take one down, pass it around, no more bottles of beer on the wall%252E%3b\" />
+    <Folder Include="BasicPrograms\Hello World\Setup\Img %282%29\,%2520%3b\" />
+    <Folder Include="BasicPrograms\Hello World\Setup\Img %283%29\World\" />
+    <Folder Include="BasicPrograms\Hello World\Setup\Img %284%29\!\" />
+    <Folder Include="BasicPrograms\Hello World\Setup\Img\Hello\" />
+    <Folder Include="BasicPrograms\Long String\1 Images\bigguy\" />
+    <Folder Include="BasicPrograms\Long String\1 Images\Img\" />
+    <Folder Include="BasicPrograms\Long String\2 Downloads\bigguy\" />
+    <Folder Include="BasicPrograms\Long String\2 Downloads\Img\Call me Ishmael. Some years ago - never mind how long precisely - having little or no mon\" />
+    <Folder Include="BasicPrograms\Long String\3 Downloads\1 bigguy\" />
+    <Folder Include="BasicPrograms\Long String\3 Downloads\2 bigguy +\" />
+    <Folder Include="BasicPrograms\Long String\3 Downloads\3 Img\ey in my purse, and nothing particular to interest me on shor\" />
+    <Folder Include="BasicPrograms\Long String\4 Downloads\1 bigguy\" />
+    <Folder Include="BasicPrograms\Long String\4 Downloads\2 bigguy +\" />
+    <Folder Include="BasicPrograms\Long String\4 Downloads\Img\e, I thought I would sail about a little and see the watery part of the world\" />
+    <Folder Include="BasicPrograms\Long String\5 Setup\bigguy\" />
+    <Folder Include="PurePrograms\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rottytooth.Esolang.Folders\Rottytooth.Esolang.Folders.csproj">
@@ -90,9 +106,24 @@
       <Name>Rottytooth.Esolang.Folders</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /T /E /I "$(ProjectDir)\Programs" "$(TargetDir)\Programs"</PostBuildEvent>
+    <PostBuildEvent>rmdir /s "$(TargetDir)\BasicPrograms"
+rmdir /s "$(TargetDir)\PurePrograms"
+xcopy /T /E /I "$(ProjectDir)\BasicPrograms" "$(TargetDir)\BasicPrograms"
+xcopy /T /E /I "$(ProjectDir)\PurePrograms" "$(TargetDir)\PurePrograms"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
