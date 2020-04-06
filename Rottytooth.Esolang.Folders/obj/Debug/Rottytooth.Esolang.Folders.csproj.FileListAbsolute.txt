@@ -1,9 +1,0 @@
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\obj\Debug\Rottytooth.Esolang.Folders.csprojAssemblyReference.cache
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\bin\Debug\Folders.exe.config
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\bin\Debug\Folders.exe
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\bin\Debug\Folders.pdb
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\bin\Debug\Rottytooth.Esolang.Folders.Runtime.dll
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\bin\Debug\Rottytooth.Esolang.Folders.Runtime.pdb
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\obj\Debug\Rottytooth.Esolang.Folders.csproj.CopyComplete
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\obj\Debug\Folders.exe
-Z:\Repos\Folders\Rottytooth.Esolang.Folders\obj\Debug\Folders.pdb
