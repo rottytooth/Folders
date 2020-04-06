@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders", "Rottytooth.Esolang.Folders\Rottytooth.Esolang.Folders.csproj", "{93DF756D-62EF-4B83-BD35-B281F3CF701E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders.SamplePrograms", "Rottytooth.Esolang.Folders.SamplePrograms\Rottytooth.Esolang.Folders.SamplePrograms.csproj", "{CA63EEE2-B804-40ED-9EEA-8A94996D18FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Folders.Runtime", "Rottytooth.Esolang.Folders.Runtime\Rottytooth.Esolang.Folders.Runtime.csproj", "{0462FC51-8839-4907-AE19-DE4B3929AF95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE86F84F-E254-4965-96F0-B7ABC00E1FEC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED5970FA-7A0E-4087-BB5E-48FE59FA5B96}
 	EndGlobalSection
 EndGlobal

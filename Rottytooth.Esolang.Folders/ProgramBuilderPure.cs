@@ -128,7 +128,7 @@ namespace Rottytooth.Esolang.Folders
 
                         throw new SyntaxError("Could not determine type of command at " + baseDir.FullName);
                 }
-            } catch(Exception ex)
+            } catch(Exception)
             {
                 throw new SyntaxError("Command failed to build at path " + baseDir.FullName);
             }
@@ -218,7 +218,7 @@ namespace Rottytooth.Esolang.Folders
                         break;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SyntaxError("Expression failed to build at path " + baseDir.FullName);
             }

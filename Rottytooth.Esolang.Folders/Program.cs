@@ -14,7 +14,7 @@ namespace Rottytooth.Esolang.Folders
         const string ERROR_STRING = "Could not compile.\nERRORS:\n\n";
 
         const string HOW_TO_FOLDER =
-            "USAGE: Folders [options] path_to_root_folder\n\nOptions include:\n/b for Basic or Concise Folders, the syntax where data is stored in the foldernames\n/sTranspile to C# and output the C# rather than building\n/eCreate an exe, rather than running the code immediately";
+            "USAGE: Folders [options] path_to_root_folder\n\nOptions include:/sTranspile to C# and output the C# rather than building\n/eCreate an exe, rather than running the code immediately";
 
         internal static void Main(string[] args)
         {
@@ -28,6 +28,8 @@ namespace Rottytooth.Esolang.Folders
             string[] arguments = GetOptions(args, out path);
 
             // If /b option is provided, use "basic" or "concise" or "classic" folders interpreting
+
+            // Basic Folders is now legacy
             bool pureFolders = !(arguments.Contains("b"));
 
             bool exe = !(arguments.Contains("e"));
@@ -86,7 +88,7 @@ namespace Rottytooth.Esolang.Folders
         /// <param name="path">path to root directory of the Folders program</param>
         /// <param name="errors">used to return error messages</param>
         /// <param name="exe">whether we create an exe or simply compile + run in memory</param>
-        /// <param name="pureFolders">Pure Folders (non-semantic folder names) vs the Classic Folders Syntax</param>
+        /// <param name="pureFolders">Pure Folders (non-semantic folder names) vs the (legacy) Classic Folders Syntax</param>
         /// <returns></returns>
         public static bool Compile(string path, ref string errors, bool exe, bool pureFolders)
         {
