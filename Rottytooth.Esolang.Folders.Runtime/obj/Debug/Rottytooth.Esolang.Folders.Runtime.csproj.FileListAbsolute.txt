@@ -1,0 +1,4 @@
+Z:\Repos\Folders\Rottytooth.Esolang.Folders.Runtime\bin\Debug\Rottytooth.Esolang.Folders.Runtime.dll
+Z:\Repos\Folders\Rottytooth.Esolang.Folders.Runtime\bin\Debug\Rottytooth.Esolang.Folders.Runtime.pdb
+Z:\Repos\Folders\Rottytooth.Esolang.Folders.Runtime\obj\Debug\Rottytooth.Esolang.Folders.Runtime.dll
+Z:\Repos\Folders\Rottytooth.Esolang.Folders.Runtime\obj\Debug\Rottytooth.Esolang.Folders.Runtime.pdb

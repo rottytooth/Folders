@@ -125,7 +125,7 @@ namespace Rottytooth.Esolang.Folders
                 }";
 
             using (CSharpCodeProvider csc =
-                new CSharpCodeProvider(new Dictionary<string, string>() { { "CompilerVersion", "v3.5" } }))
+                new CSharpCodeProvider(new Dictionary<string, string>() { { "CompilerVersion", "v4.0" } }))
             {
 
                 if (exe) // building to an executable
