@@ -212,7 +212,7 @@ namespace Rottytooth.Esolang.Folders
                                 break;
                             case TypeEnum.Char:
                                 value = GetEncodedValueFromSubdirectories(subDirs[2].FullName);
-                                program.Append(" " + ((char)value).ToString() + " ");
+                                program.Append("'" + ((char)value).ToString() + "'");
                                 break;
                         }
                         break;

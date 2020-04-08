@@ -50,6 +50,7 @@ namespace Rottytooth.Esolang.Folders
 
             bool succeeded = Compile(path, ref errors, exe, pureFolders);
 
+            Console.WriteLine(); // clear line after program output
             if (succeeded)
             {
                 Console.WriteLine("Complete");
