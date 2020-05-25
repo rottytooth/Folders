@@ -79,14 +79,14 @@ namespace Rottytooth.Esolang.Folders
 
                         commandDirs = subDirs[2].GetDirectories().CustomSort().ToArray();
 
-                        for (int i = 1; i < commandDirs.Length; i++)
+                        for (int i = 0; i < commandDirs.Length; i++)
                         {
                             ParseCommand(commandDirs[i].FullName, program, declarations);
                         }
                         program.Append("\n}\n");
                         break;
                     case (int)CommandEnum.Declare:
-                        string variableType = ParseType(baseDir.GetDirectories()[2].Name).ToString().ToLower();
+                        string variableType = ParseType(baseDir.GetDirectories()[2].FullName).ToString().ToLower();
                         string variableName = "Var" + baseDir.GetDirectories()[1].GetDirectories().Length.ToString();
 
                         declarations.Append("\npublic static ");
@@ -138,7 +138,7 @@ namespace Rottytooth.Esolang.Folders
         {
             DirectoryInfo baseDir = new DirectoryInfo(path);
 
-            DirectoryInfo[] subDirs = baseDir.GetDirectories();
+            DirectoryInfo[] subDirs = baseDir.GetDirectories().CustomSort().ToArray();
 
             if (subDirs.Length < 2)
             {
@@ -153,7 +153,7 @@ namespace Rottytooth.Esolang.Folders
                     case (int)ExpressionEnum.Variable:
                         // variable is easy, we just get the number of folders inside the second folder and that tells us the name
                         int intVar = subDirs[1].GetDirectories().Length;
-                        program.Append(" Var" + intVar.ToString() + " ");
+                        program.Append(" Var" + intVar.ToString());
                         break;
                     case (int)ExpressionEnum.Add:
                         // second and third folders give us the two things to add
@@ -216,6 +216,29 @@ namespace Rottytooth.Esolang.Folders
                                 break;
                         }
                         break;
+                    case (int)ExpressionEnum.EqualTo:
+                        program.Append("(");
+                        ParseExpression(subDirs[1].FullName, program);
+                        program.Append(" == ");
+                        ParseExpression(subDirs[2].FullName, program);
+                        program.Append(")");
+                        break;
+                    case (int)ExpressionEnum.GreaterThan:
+                        program.Append("(");
+                        ParseExpression(subDirs[1].FullName, program);
+                        program.Append(" > ");
+                        ParseExpression(subDirs[2].FullName, program);
+                        program.Append(")");
+                        break;
+                    case (int)ExpressionEnum.LessThan:
+                        program.Append("(");
+                        ParseExpression(subDirs[1].FullName, program);
+                        program.Append(" < ");
+                        ParseExpression(subDirs[2].FullName, program);
+                        program.Append(")");
+                        break;
+                    default:
+                        throw new SyntaxError("Could not determine type of expression at path " + baseDir.FullName);
                 }
             }
             catch (Exception)

@@ -12,6 +12,8 @@ namespace Rottytooth.Esolang.Folders
     {
         public static List<DirectoryInfo> CustomSort(this IEnumerable<DirectoryInfo> list)
         {
+            if (list.Count() == 0) { return list.ToList(); }
+
             int maxLen = list.Select(s => s.Name.Length).Max();
 
             return list.Select(s => new
