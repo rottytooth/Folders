@@ -35,7 +35,7 @@ namespace Rottytooth.Esolang.Folders.Tools
 
             if (args[0] == "FoldersToArrays")
             {
-                Console.WriteLine(FoldersToArrays.Build(args[1]));
+                Console.WriteLine(FoldersToArrays.Build(args[1], args[2]));
             }
         }
     }
