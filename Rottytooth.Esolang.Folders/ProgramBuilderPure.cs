@@ -120,7 +120,8 @@ namespace Rottytooth.Esolang.Folders
                         program.Append(");\n");
                         break;
                     case (int)CommandEnum.Input:
-                        ParseExpression(subDirs[1].FullName, program);
+                        program.Append(" Var");
+                        program.Append(subDirs[1].GetDirectories().Length);
                         program.Append(" = Console.ReadLine(");
                         program.Append(");\n");
                         break;

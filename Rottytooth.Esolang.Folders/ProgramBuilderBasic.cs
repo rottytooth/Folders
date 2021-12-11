@@ -82,7 +82,9 @@ namespace Rottytooth.Esolang.Folders
                     program.Append(");\n");
                     break;
                 case "input":
-                    ParseExpression(baseDir.GetDirectories()[0].FullName, program);
+                    program.Append(" Var");
+                    subdir = baseDir.GetDirectories();
+                    program.Append(subdir[1].GetDirectories().Length);
                     program.Append(" = Console.ReadLine(");
                     program.Append(");\n");
                     break;
