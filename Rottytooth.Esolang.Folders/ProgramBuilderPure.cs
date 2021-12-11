@@ -64,7 +64,7 @@ namespace Rottytooth.Esolang.Folders
 
                         commandDirs = subDirs[2].GetDirectories().CustomSort().ToArray();
 
-                        for (int i = 1; i < commandDirs.Length; i++) // third directory is the list of commands to carry out
+                        for (int i = 0; i < commandDirs.Length; i++) // third directory is the list of commands to carry out
                         {
                             ParseCommand(commandDirs[i].FullName, program, declarations);
                         }

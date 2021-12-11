@@ -92,7 +92,7 @@ namespace Rottytooth.Esolang.Folders
                     program.Append(")");
                     program.Append("\n{\n");
                     subdir = baseDir.GetDirectories();
-                    for (int i = 1; i < subdir.Length; i++)
+                    for (int i = 0; i < subdir.Length; i++)
                     {
                         ParseCommand(subdir[i].FullName, program, declarations);
                     }
