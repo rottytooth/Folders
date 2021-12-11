@@ -86,8 +86,8 @@ namespace Rottytooth.Esolang.Folders
                         program.Append("\n}\n");
                         break;
                     case (int)CommandEnum.Declare:
-                        string variableType = ParseType(baseDir.GetDirectories()[2].FullName).ToString().ToLower();
-                        string variableName = "Var" + baseDir.GetDirectories()[1].GetDirectories().Length.ToString();
+                        string variableType = ParseType(baseDir.GetDirectories()[1].FullName).ToString().ToLower();
+                        string variableName = "Var" + baseDir.GetDirectories()[2].GetDirectories().Length.ToString();
 
                         declarations.Append("\npublic static ");
                         declarations.Append(variableType);

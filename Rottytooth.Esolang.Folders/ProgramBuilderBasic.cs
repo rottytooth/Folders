@@ -110,7 +110,7 @@ namespace Rottytooth.Esolang.Folders
                     break;
                 case "declare":
                     string variableType = ResolveName(baseDir.GetDirectories()[1].Name);
-                    string variableName = ResolveName(baseDir.GetDirectories()[0].Name);
+                    string variableName = ResolveName(baseDir.GetDirectories()[2].Name);
 
                     declarations.Append("\npublic static ");
                     declarations.Append(variableType);
