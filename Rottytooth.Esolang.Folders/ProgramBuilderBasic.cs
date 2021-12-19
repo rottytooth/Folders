@@ -82,7 +82,9 @@ namespace Rottytooth.Esolang.Folders
                     program.Append(");\n");
                     break;
                 case "input":
-                    ParseExpression(baseDir.GetDirectories()[0].FullName, program);
+                    program.Append(" Var");
+                    subdir = baseDir.GetDirectories();
+                    program.Append(subdir[1].GetDirectories().Length);
                     program.Append(" = Console.ReadLine(");
                     program.Append(");\n");
                     break;
@@ -92,7 +94,7 @@ namespace Rottytooth.Esolang.Folders
                     program.Append(")");
                     program.Append("\n{\n");
                     subdir = baseDir.GetDirectories();
-                    for (int i = 1; i < subdir.Length; i++)
+                    for (int i = 0; i < subdir.Length; i++)
                     {
                         ParseCommand(subdir[i].FullName, program, declarations);
                     }
@@ -108,7 +110,7 @@ namespace Rottytooth.Esolang.Folders
                     break;
                 case "declare":
                     string variableType = ResolveName(baseDir.GetDirectories()[1].Name);
-                    string variableName = ResolveName(baseDir.GetDirectories()[0].Name);
+                    string variableName = ResolveName(baseDir.GetDirectories()[2].Name);
 
                     declarations.Append("\npublic static ");
                     declarations.Append(variableType);
