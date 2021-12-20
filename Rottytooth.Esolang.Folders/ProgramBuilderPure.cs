@@ -52,8 +52,8 @@ namespace Rottytooth.Esolang.Folders
 
             DirectoryInfo[] commandDirs; // for subcommands
 
-            //try
-            //{
+            try
+            {
                 switch (commandID)
                 {
                     case (int)CommandEnum.If:
@@ -129,10 +129,11 @@ namespace Rottytooth.Esolang.Folders
 
                         throw new SyntaxError("Could not determine type of command at " + baseDir.FullName);
                 }
-            //} catch(Exception)
-            //{
-            //    throw new SyntaxError("Command failed to build at path " + baseDir.FullName);
-            //}
+            }
+            catch (Exception)
+            {
+                throw new SyntaxError("Command failed to build at path " + baseDir.FullName);
+            }
         }
 
         private void ParseExpression(string path, StringBuilder program)
