@@ -21,3 +21,12 @@ Since writing constants in Folders is a challenge (especially strings), the Fold
   value = the value to convert
   
   [add_gitignore] (optional) allows for adding .gitignores to all terminal folders (necessary to check in Folders programs)
+
+## Compiling
+
+The Folders project itself is the compiler. Run it, providing the path to your Folders programs
+
+*Args*:
+
+  /s to transpile to C#
+  

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Rottytooth.Esolang.Folders.SamplePrograms</RootNamespace>
     <AssemblyName>Rottytooth.Esolang.Folders.SamplePrograms</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -3278,6 +3278,10 @@
     <Folder Include="99Bottles\New folder\New folder %283%29\" />
     <Folder Include="99Bottles\New folder\New folder\New folder %282%29\" />
     <Folder Include="99Bottles\New folder\New folder\New folder\" />
+    <Folder Include="99Bottles\New\NewFolder1\NewFolder1\" />
+    <Folder Include="99Bottles\New\NewFolder1\NewFolder2\" />
+    <Folder Include="99Bottles\New\NewFolder2\" />
+    <Folder Include="99Bottles\New\NewFolder3\NewFolder1\" />
     <Folder Include="HelloWorld\New folder\New folder %282%29\New folder %283%29\New folder - Copy %2811%29\New folder %282%29\New folder %282%29\New folder\" />
     <Folder Include="HelloWorld\New folder\New folder %282%29\New folder %283%29\New folder - Copy %2811%29\New folder %282%29\New folder %283%29\" />
     <Folder Include="HelloWorld\New folder\New folder %282%29\New folder %283%29\New folder - Copy %2811%29\New folder %282%29\New folder %284%29\" />
